@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// Размеры контейнеров для разных устройств
+$mobile-container: 290px;
+$tablet-container: 698px;
+$desktop-container: 960px;
+
+// Брейкпойнты
+$mobile-breakpoint: ($mobile-container + 2*14px);
+$tablet-breakpoint: ($tablet-container + 2*35px);
+$desktop-breakpoint: ($desktop-container + 2*120px);
+
+// Основные цвета
+$font-color: #434343;
+$background-color: #eff3f7;
+$link-color: #27ae61;
+$link-hover-color: #f43f3f;
+$button-color: #e74b3c;
+$button-hover-color: #f43f3f;
+
+// Размеры блоков
+$mobile-sidebar-width: 250px;
+$tablet-sidebar-width: 250px;
+$desktop-sidebar-width: 250px;
+
+  // Цвета блоков
+$sidebar-background-color: $background-color;
+$content-background-color: $background-color;
