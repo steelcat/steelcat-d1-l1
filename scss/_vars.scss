@@ -16,7 +16,7 @@ $tablet-breakpoint: ($tablet-container + 2*$tablet-container-padding);
 $desktop-breakpoint: ($desktop-container + 2*$desktop-container-padding);
 
 // Размеры шрифтов
-$font-family: 'sans-serif';
+$font-family: 'Fira Sans';
 $font-size: 17px;
 $line-height: 1.1;
 
@@ -32,9 +32,9 @@ $button-hover-color: #f43f3f;
 $mobile-sidebar-width: 250px;
 $tablet-sidebar-width: 250px;
 $desktop-sidebar-width: 250px;
-$mobile-content-width: 570px;
-$tablet-content-width: 570px;
-$desktop-content-width: 570px;
+$mobile-content-width: 650px;
+$tablet-content-width: 650px;
+$desktop-content-width: 650px;
 
   // Цвета блоков
 $header-background-color: $background-color;
