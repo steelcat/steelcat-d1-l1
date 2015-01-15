@@ -34,8 +34,23 @@ h3 {
   margin-bottom: 10px;
 }
 header { min-height: 115px; margin-bottom: 40px; background-color: $header-background-color; }
+.header-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .logo { float: left; width: 248px; height: 58px; background-color: #ffffff; display: inline-block; }
-.social { float: right; width: 260px; height: 58px; background-color: #ffffff; display: inline-block; }
+.social { float: right; height: 115px; line-height: 115px; display: inline-block; }
+.social a { margin-right: 14px; }
+.social a i {
+  color: #58697a;
+  -webkit-transition: color 0.3s ease-out 0.5s;
+  -moz-transition: color 0.3s ease-out 0.5s;
+  -o-transition: color 0.3s ease-out 0.5s;
+  transition: color 0.3s ease-out 0.5s;
+}
+.social a:hover i { color: #3ba8c0; }
 .container {
   margin: 0 auto;
   width: $desktop-container;
