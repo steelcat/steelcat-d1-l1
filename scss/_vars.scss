@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 // Размеры контейнеров для разных устройств
 $mobile-container: 290px;
 $tablet-container: 698px;
@@ -15,7 +14,7 @@ $mobile-breakpoint: ($mobile-container + 2*$mobile-container-padding);
 $tablet-breakpoint: ($tablet-container + 2*$tablet-container-padding);
 $desktop-breakpoint: ($desktop-container + 2*$desktop-container-padding);
 
-// Размеры шрифтов
+// Стили шрифтов
 $font-family: 'Fira Sans';
 $font-size: 17px;
 $line-height: 1.1;

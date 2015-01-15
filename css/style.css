@@ -307,6 +307,104 @@ th {
   src: local("Fira Mono Bold"), url("../fonts/fira/eot/FiraMono-Bold.eot") format("embedded-opentype"), url("../fonts/fira/woff/FiraMono-Bold.woff") format("woff"), url("../fonts/fira/ttf/FiraMono-Bold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
+/* Типографика */
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-family: "Fira Sans";
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased; }
+
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  ul li,
+  ol li {
+    line-height: 1.5rem; }
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: "Fira Sans";
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-style: normal; }
+
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem; }
+
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem; }
+
+h3 {
+  font-size: 1.414rem; }
+
+h4 {
+  font-size: 0.707rem; }
+
+h5 {
+  font-size: 0.47133rem; }
+
+h6 {
+  font-size: 0.3535rem; }
+
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+td,
+th {
+  padding: 0;
+  line-height: 33px; }
+
+/* Code blocks */
+code {
+  vertical-align: bottom; }
+
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem; }
+
+/* Hug a the block above you */
+.hug {
+  margin-top: 0; }
+
+/* Подключаем украшательства для элементов */
+.circle {
+  border-radius: 50%; }
+
 /* Подключаем стили блоков */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -400,7 +498,7 @@ header {
 
 .block {
   float: left;
-  min-height: 400px;
+  min-height: 325px;
   width: 100%;
   background-color: #eff3f7;
   margin-bottom: 24px;
@@ -417,18 +515,34 @@ header {
   font-size: 27px;
   padding-bottom: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   color: #3ba8c0;
   border-bottom: 2px solid #3ba8c0; }
 
+.info {
+  float: left; }
+
 .avatar {
   float: left;
+  padding-left: 55px;
+  padding-top: 30px;
   height: 210px;
-  width: 210px;
-  background-color: #f43f3f;
-  border-radius: 50%; }
+  width: 210px; }
+
+.avatar img {
+  border: 4px solid #3ba8c0; }
 
 .info-main {
-  float: left; }
+  float: left;
+  padding-left: 18px;
+  padding-top: 8px; }
+
+.row {
+  line-height: 33px; }
+
+.row span {
+  font-weight: bold;
+  padding-right: 16px; }
 
 footer {
   min-height: 78px;
