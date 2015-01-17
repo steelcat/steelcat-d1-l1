@@ -308,6 +308,12 @@ th {
   font-weight: 600;
   font-style: normal; }
 @font-face {
+  font-family: 'Fira Sans Book';
+  src: url("../fonts/fira/eot/FiraSans-Book.eot");
+  src: local("Fira Sans Book"), url("../fonts/fira/eot/FiraSans-Book.eot") format("embedded-opentype"), url("../fonts/fira/woff/FiraSans-Book.woff") format("woff"), url("../fonts/fira/ttf/FiraSans-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
   font-family: 'loft-social-icons';
   src: url("../fonts/loft-social-icons/loft-social-icons.eot?22029649");
   src: url("../fonts/loft-social-icons/loft-social-icons.eot?22029649#iefix") format("embedded-opentype"), url("../fonts/loft-social-icons/loft-social-icons.woff?22029649") format("woff"), url("../fonts/loft-social-icons/loft-social-icons.ttf?22029649") format("truetype"), url("../fonts/loft-social-icons/loft-social-icons.svg?22029649#loft-social-icons") format("svg");
@@ -369,7 +375,7 @@ th {
 /* Setup */
 html {
   /* Change default typefaces here */
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Book";
   font-size: 17px;
   -webkit-font-smoothing: antialiased; }
 
@@ -381,17 +387,7 @@ p {
 
 ul,
 ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
-  ul li,
-  ol li {
-    line-height: 1.5rem; }
-  ul ul,
-  ul ol,
-  ol ul,
-  ol ol {
-    margin-top: 0;
-    margin-bottom: 0; }
+  margin: 0; }
 
 blockquote {
   line-height: 1.5rem;
@@ -406,11 +402,11 @@ h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Book";
   margin-top: 1.5rem;
   margin-bottom: 0;
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal; }
 
 h1 {
@@ -462,6 +458,20 @@ code {
 .circle {
   border-radius: 50%; }
 
+a {
+  color: #27ae61;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  color: #f43f3f;
+  text-decoration: none; }
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
 /* Подключаем стили блоков */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -469,7 +479,7 @@ code {
   box-sizing: border-box; }
 
 body {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans Book";
   font-size: 17px;
   line-height: 1.1;
   color: #4a545d;
@@ -503,22 +513,21 @@ header {
   background-color: #eff3f7; }
 
 .header-container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 100px;
+  padding-left: 100px;
   margin-right: auto;
   margin-left: auto; }
 
 .logo {
   float: left;
-  width: 248px;
-  height: 58px;
-  background-color: #ffffff;
+  padding-top: 25px;
+  width: 250px;
+  height: 60px;
   display: inline-block; }
 
 .social {
   float: right;
-  height: 115px;
-  line-height: 115px;
+  padding-top: 32px;
   display: inline-block; }
 
 .social a {
@@ -536,7 +545,8 @@ header {
 
 .container {
   margin: 0 auto;
-  width: 960px; }
+  width: 960px;
+  height: 100%; }
 
 .container:before, .container:after {
   display: table;
@@ -548,6 +558,9 @@ header {
 .sidebar {
   float: left;
   width: 250px;
+  background: none; }
+
+.sidebar-menu {
   background-color: #eff3f7;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -558,13 +571,50 @@ header {
   list-style: none; }
 
 .nav > li {
-  position: relative;
-  display: block; }
+  display: block;
+  padding-left: 10px;
+  line-height: 73px;
+  font-size: 21px;
+  height: 73px; }
+
+.nav > li:first-child {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0; }
+
+.nav > li:last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px; }
+
+.nav > li.active {
+  background-color: #3ba8c0;
+  font-size: 23px; }
 
 .nav > li > a {
-  position: relative;
-  display: block;
-  padding-left: 25px; }
+  display: inline-block;
+  color: #3BA8C0;
+  border-bottom: 2px solid #3ba8c0;
+  padding-left: 18px;
+  min-width: 230px; }
+
+.nav > li.active > a {
+  border-bottom: 0px solid #3ba8c0;
+  color: #ffffff; }
+
+.nav > li.active:first-child > a {
+  border-bottom: 0px solid #3ba8c0; }
+
+.nav > li:last-child > a {
+  border-bottom: 0px solid #3ba8c0; }
+
+.contacts {
+  margin-top: 24px;
+  background-color: #eff3f7;
+  min-height: 200px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
 
 .content {
   float: right;
@@ -588,7 +638,8 @@ header {
   float: left;
   display: inline-block;
   font-size: 27px;
-  padding-bottom: 20px;
+  margin-top: 9px;
+  padding-bottom: 6px;
   padding-left: 20px;
   padding-right: 20px;
   color: #3ba8c0;
@@ -617,11 +668,25 @@ header {
 
 .row span {
   font-weight: bold;
-  padding-right: 16px; }
+  margin-right: 16px; }
+
+span.skill {
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 8px;
+  background-image: -moz-linear-gradient(bottom, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
+  background-image: -o-linear-gradient(bottom, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
+  background-image: -webkit-linear-gradient(bottom, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
+  background-image: linear-gradient(to top, #2E8CA2 0%, #2E8CA2 52%, #3BA8C0 53%, #3BA8C0 100%);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
 
 footer {
-  min-height: 78px;
-  margin-top: 40px;
+  height: 78px;
+  margin-top: 20px;
   background-color: #eff3f7; }
 
 /*# sourceMappingURL=style.css.map */

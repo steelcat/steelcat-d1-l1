@@ -1,2 +1,16 @@
 @charset "UTF-8";
 .circle { border-radius: 50%; }
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: $link-hover-color;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}

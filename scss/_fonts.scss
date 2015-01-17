@@ -219,6 +219,17 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'Fira Sans Book';
+  src: url('../fonts/fira/eot/FiraSans-Book.eot');
+  src: local('Fira Sans Book'),
+  url('../fonts/fira/eot/FiraSans-Book.eot') format('embedded-opentype'),
+  url('../fonts/fira/woff/FiraSans-Book.woff') format('woff'),
+  url('../fonts/fira/ttf/FiraSans-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'loft-social-icons';
   src: url('../fonts/loft-social-icons/loft-social-icons.eot?22029649');
