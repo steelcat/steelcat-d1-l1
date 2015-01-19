@@ -315,8 +315,8 @@ th {
   font-style: normal; }
 @font-face {
   font-family: 'loft-social-icons';
-  src: url("../fonts/loft-social-icons/loft-social-icons.eot?22029649");
-  src: url("../fonts/loft-social-icons/loft-social-icons.eot?22029649#iefix") format("embedded-opentype"), url("../fonts/loft-social-icons/loft-social-icons.woff?22029649") format("woff"), url("../fonts/loft-social-icons/loft-social-icons.ttf?22029649") format("truetype"), url("../fonts/loft-social-icons/loft-social-icons.svg?22029649#loft-social-icons") format("svg");
+  src: url("../fonts/loft-social-icons/loft-social-icons.eot?96358006");
+  src: url("../fonts/loft-social-icons/loft-social-icons.eot?96358006#iefix") format("embedded-opentype"), url("../fonts/loft-social-icons/loft-social-icons.woff?96358006") format("woff"), url("../fonts/loft-social-icons/loft-social-icons.ttf?96358006") format("truetype"), url("../fonts/loft-social-icons/loft-social-icons.svg?96358006#loft-social-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -325,7 +325,7 @@ th {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'loft-social-icons';
-    src: url('../font/loft-social-icons.svg?22029649#loft-social-icons') format('svg');
+    src: url('../font/loft-social-icons.svg?96358006#loft-social-icons') format('svg');
   }
 }
 */
@@ -333,12 +333,11 @@ th {
   font-family: "loft-social-icons";
   font-style: normal;
   font-weight: normal;
-  font-size: 54px;
   speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  /* margin-right: .2em; */
+  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -348,7 +347,7 @@ th {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  /* margin-left: .2em; */
+  margin-left: .2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
@@ -370,6 +369,18 @@ th {
   content: '\e803'; }
 
 /* 'юаГ' */
+.icon-mail:before {
+  content: '\e804'; }
+
+/* 'юаД' */
+.icon-phone:before {
+  content: '\e805'; }
+
+/* 'юаЕ' */
+.icon-skype:before {
+  content: '\e806'; }
+
+/* 'юаЖ' */
 /* Типографика */
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
@@ -599,11 +610,11 @@ header {
   min-width: 230px; }
 
 .nav > li.active > a {
-  border-bottom: 0px solid #3BA8C0;
+  border-bottom: 0 solid #3BA8C0;
   color: #ffffff; }
 
 .nav > li.active:first-child > a {
-  border-bottom: 0px solid #3BA8C0; }
+  border-bottom: 0 solid #3BA8C0; }
 
 .nav > li:last-child > a {
   border-bottom: 0px solid #3BA8C0; }
@@ -614,6 +625,9 @@ header {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+
+.contacts i {
+  margin-right: 20px; }
 
 .contacts h2 {
   color: #ffffff;
@@ -630,23 +644,23 @@ header {
 .mail {
   color: #ffffff;
   background-color: #41b9d4;
+  padding-left: 42px;
   line-height: 40px;
-  height: 40px;
-  text-align: center; }
+  height: 40px; }
 
 .phone {
   color: #ffffff;
   background-color: #48cbe8;
+  padding-left: 42px;
   line-height: 40px;
-  height: 40px;
-  text-align: center; }
+  height: 40px; }
 
 .skype {
   color: #ffffff;
   background-color: #51daf8;
+  padding-left: 42px;
   line-height: 40px;
-  height: 40px;
-  text-align: center; }
+  height: 40px; }
 
 .content {
   float: right;
@@ -695,12 +709,12 @@ header {
   padding-left: 18px;
   padding-top: 8px; }
 
-.row {
-  line-height: 33px; }
-
 .row span {
   font-weight: bold;
   margin-right: 16px; }
+
+.info-main .row {
+  line-height: 33px; }
 
 span.skill {
   font-size: 14px;
