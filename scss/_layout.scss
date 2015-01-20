@@ -227,7 +227,7 @@ footer { height: 78px; margin-top: 20px; background-color: $footer-background-co
 .works-list ul { margin-left: 20px; }
 .works-list ul li { display: inline-block; margin-right: 30px; }
 .works-list ul li:last-child { margin: 0; }
-.works-list img {
+.works-list ul li a.preview img {
   margin: 0;
   padding: 0;
   height: 130px;
@@ -251,3 +251,48 @@ footer { height: 78px; margin-top: 20px; background-color: $footer-background-co
   border-radius: 4px;
 }
 .work-tip:hover { opacity: 0.8; color: #ffffff; line-height: 130px; text-align: center; }
+.work-tip span {
+  font-family: "Fira Sans Book";
+  font-size: 12px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 2px;
+  color: #fff;
+}
+.works-list ul { margin-bottom: 48px; }
+.works-list ul li a.link {
+  font-family: "Fira Sans";
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+}
+.works-list ul li {
+  vertical-align: top;
+}
+.site-info {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+}
+.add-work {
+  height: 127px;
+  position: relative;
+}
+.works-list ul li.add-work {
+  height: 130px;
+  width: 180px;
+  background: none repeat scroll 0 0 #edf8fc;
+  border: 1px dashed #3ba8c0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.works-list ul li.add-work:hover {
+  background: none repeat scroll 0 0 #ceecf7;
+}
+.add-work img { height: 32px; width: 32px; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
