@@ -124,7 +124,7 @@ Messi.prototype = {
     show: true,                              // show message after load
     unload: true,                            // unload message after hide
     viewport: {top: '0px', left: '0px'},     // if not center message, sets X and Y position
-    width: '500px',                          // message width
+    width: '364px',                          // message width
     zIndex: 99999                            // message z-index
   },
   template: '<div class="messi"><div class="messi-box"><div class="messi-wrapper"><div class="messi-titlebox"><span class="messi-title"></span></div><div class="messi-content"></div><div class="messi-footbox"><div class="messi-actions"></div></div></div></div></div>',

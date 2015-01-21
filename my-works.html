@@ -2,8 +2,12 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Мои работы</title>
+    <title>Обо мне</title>
     <link type="text/css" rel="stylesheet" media="all" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/html5shiv.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="css/ie.css">
+    <![endif]-->
 </head>
 <body>
     <div class="wrap">
@@ -81,9 +85,9 @@
                                     <div class="desc">Антикварный магазин</div>
                                 </div>
                             </li>
-                            <li class="add-work">
+                            <li id="add-work">
                                 <img src="images/add-project.png">
-                                <a id="add-work">Добавить проект</a>
+                                <span>Добавить проект</span>
                             </li>
                         </ul>
 
@@ -99,13 +103,13 @@
         </footer>
     </div>
     <script src="js/jquery/jquery-1.11.2.min.js"></script>
-    <script src="js/messi/messi.min.js"></script>
+    <script src="js/messi/messi.js"></script>
     <script>
         jQuery.noConflict ();
         (function($) {
             $(document).ready(function() {
                 $('#add-work').on('click', function() {
-                    Messi.load('blocks/add-work.html', {title: 'Добавить проект', modal: true});
+                    Messi.load('blocks/add-work.html', {title: 'Добавление проекта', modal: true});
                 });
             });
         })(jQuery);

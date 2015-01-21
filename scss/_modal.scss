@@ -20,42 +20,23 @@
 }
 
 .messi-box {
-  position: relative;
-  width: 500px;
-  height: auto;
-  padding: 8px;
-  overflow: hidden;
-  background-color: rgba(204, 204, 204, 0.2);
-  border-radius: 6px;
-  opacity: 1;
-  box-shadow: 0 0 1em #444;
+
 }
 
 .messi-wrapper {
   position: relative;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .messi-titlebox {
-  padding: 10px;
-  overflow: hidden;
-  font: 1.3em bold helvetica, arial;
+  background: none repeat scroll 0 0 #48cbe8;
+  border-bottom: 9px solid #67dffa;
+  border-radius: 4px 4px 0 0;
   color: #fff;
-  text-shadow: 0 -2px 1px rgba(0, 0, 0, 0.25);
-  background-color: #3b3b3b;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, #3b3b3b), color-stop(0.75, #575757));
-  background-image: linear-gradient(bottom, #3b3b3b 25%, #575757 75%);
-  background-image: -moz-linear-gradient(bottom, #3b3b3b 25%, #575757 75%);
-  background-image: -o-linear-gradient(bottom, #3b3b3b 25%, #575757 75%);
-  background-image: -webkit-linear-gradient(bottom, #3b3b3b 25%, #575757 75%);
-  background-image: -ms-linear-gradient(bottom, #3b3b3b 25%, #575757 75%);
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 5px;
+  font: 25px "Fira Sans";
+  font-weight: 300;
+  padding: 7px 13px 0 15px;
 }
 
 .messi-titlebox.info {
@@ -79,22 +60,23 @@
 }
 
 .messi-closebtn {
+  font-size: 25px;
+  line-height: 25px;
   position: absolute;
   top: 8px;
   right: 8px;
   display: block;
   width: 25px;
   height: 25px;
-  color: #333;
   cursor: pointer;
-  background-color: #fff;
-  border: 1px solid rgba(255, 255, 255, .1);
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
   border-radius: 40px;
 }
 
 .messi-closebtn::before {
   position: relative;
-  top: 2px;
   display: block;
   width: 25px;
   text-align: center;
@@ -124,7 +106,10 @@
   -o-transition: opacity .25s linear, visibility .1s linear .5s;
   transition: opacity .25s linear, visibility .1s linear .5s;
 }
-
+.messi-closebtn:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  opacity: 0.75;
+}
 .messi-content:hover .messi-closebtn {
   opacity: 1;
 }
