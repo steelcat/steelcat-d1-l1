@@ -83,7 +83,7 @@
                             </li>
                             <li class="add-work">
                                 <img src="images/add-project.png">
-                                <a id="add-project">Добавить проект</a>
+                                <a id="add-work">Добавить проект</a>
                             </li>
                         </ul>
 
@@ -101,12 +101,11 @@
     <script src="js/jquery/jquery-1.11.2.min.js"></script>
     <script src="js/messi/messi.min.js"></script>
     <script>
-
         jQuery.noConflict ();
         (function($) {
             $(document).ready(function() {
-                $('#add-project').on('click', function() {
-                    Messi.load('blocks/add-project.html', {title: 'Добавить проект', modal: true});
+                $('#add-work').on('click', function() {
+                    Messi.load('blocks/add-work.html', {title: 'Добавить проект', modal: true});
                 });
             });
         })(jQuery);
