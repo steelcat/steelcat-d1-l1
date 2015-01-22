@@ -2,7 +2,7 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Обо мне</title>
+    <title>Связаться со мной</title>
     <link type="text/css" rel="stylesheet" media="all" href="css/style.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv/html5shiv.js"></script>
@@ -40,7 +40,7 @@
             <div class="content contact-me">
                 <h2>У вас интересный проект? Напишите мне</h2>
                 <form action="mail.php" method="GET" is="ajaxform">
-                    <div>
+                    <div class="name-mail">
                         <div class="input">
                             <label for="name">Имя <br></label>
                             <input id="name" placeholder="Как к Вам обращаться" name="name" type="text">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="capture">
                         <label for="captcha_image">Введите код, указанный на картинке </label>
-                        <img id="captcha_image" src="/rubets/securimage/securimage_show.php?5190101e7a2f1d460f298af2019b6d21" alt="CAPTCHA Image" align="left"><br><input placeholder="Введите код" name="captcha_code" id="captcha_code" type="text">        </div>
+                        <img id="captcha_image" src="images/simple-php-captcha.png" alt="CAPTCHA Image" align="left"><br><input placeholder="Введите код" name="captcha_code" id="captcha_code" type="text"></div>
                     <div class="buttons">
                         <button type="submit">Отправить</button>
                         <button type="reset">Очистить</button>
